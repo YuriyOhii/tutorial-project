@@ -1,0 +1,136 @@
+:root {
+  --primary-brand-color: #4d5ae5;
+  --dark-color: #2e2f42;
+  --subtle-text-color: #8e8f99;
+  --success-color: #31d0aa;
+  --text-color: #434455;
+  --accent-color: #e7e9fc;
+  --light-color: #f4f4fd;
+  --main-bkg-color: #ffffff;
+}
+body {
+  color: var(--text-color);
+  background-color: var(--main-bkg-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* Main navigation */
+.main-nav .link {
+  color: var(--dark-color);
+  font-weight: 600;
+}
+.main-nav .link:hover,
+.main-nav .link:focus {
+  color: inherit;
+}
+.main-nav .link.current {
+  color: var(--primary-brand-color);
+}
+.head-contacts .link:hover,
+.head-contacts .link:focus {
+  color: var(--primary-brand-color);
+}
+.main-nav .accent,
+.footer .accent {
+  color: var(--primary-brand-color);
+}
+.link.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/* Hero */
+.hero {
+  background-color: var(--dark-color);
+  color: var(--main-bkg-color);
+}
+.hero .title {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+/* Features */
+.features h3,
+.team h3,
+.products h2 {
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+/* What are we doing */
+.doing > h2 {
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+.team {
+  background-color: var(--light-color);
+}
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  color: var(--accent-color);
+}
+.footer .link {
+  color: var(--accent-color);
+}
+/* Buttons */
+.buttons {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border: none;
+}
+.order {
+  background-color: var(--primary-brand-color);
+  color: var(--main-bkg-color);
+  line-height: 1.19;
+}
+.order:hover,
+.order:focus {
+  background-color: #404BBF;
+}
+.filtr {
+  background-color: var(--accent-color);
+  color: var(--primary-brand-color);
+  line-height: 1.5;
+}
+.filtr:hover,
+.filtr:focus {
+  background-color: var(--primary-brand-color);
+  color: var(--main-bkg-color);
+}
+/* Links */
+.link {
+  text-decoration: none;
+  color: inherit;;
+}
+/* Lists */
+.list {
+  list-style: none;
+}
+/* hidden elements */
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
