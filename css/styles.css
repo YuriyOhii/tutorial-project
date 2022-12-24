@@ -146,6 +146,7 @@ body {
 }
 .team {
   background-color: var(--light-color);
+  padding: 120px 0;
 }
 /* Footer */
 .footer {
@@ -217,7 +218,7 @@ border-radius: 0px 0px 4px 4px;
 .team .list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 120px;
+  
 }
 .caption {
   padding: 0 44px;
