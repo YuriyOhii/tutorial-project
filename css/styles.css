@@ -138,6 +138,8 @@ body {
 }
 .section .image {
   display: block;
+  width: 100%;
+  height: auto;
 }
 .pic .list {
   display: flex;
@@ -205,9 +207,6 @@ body {
 .filtr-list .item:not(:last-child) {
   margin-right: 24px;
 }
-.filtr-list .item {
-}
-
 /* Links */
 .link {
   text-decoration: none;
