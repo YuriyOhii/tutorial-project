@@ -34,7 +34,6 @@ body {
 .text {
   padding: 0;
   margin: 0;
-
 }
 /* Sections */
 .section:not(:last-child) {
@@ -119,13 +118,13 @@ body {
 }
 .features .list {
   display: flex;
-  }
+}
 .features .item {
   flex-basis: calc((100% - 24px) / 4);
-  }
-  .features .item:not(:last-child) {
-    margin-right: 24px;
-  }
+}
+.features .item:not(:last-child) {
+  margin-right: 24px;
+}
 
 /* What are we doing */
 .doing h2 {
@@ -181,16 +180,34 @@ body {
 .order:focus {
   background-color: #404bbf;
 }
+/* Portfolio filtr */
 .filtr {
   background-color: var(--accent-color);
   color: var(--primary-brand-color);
   line-height: 1.5;
+  border: 1px solid #e7e9fc;
+  padding: 8px 16px;
 }
 .filtr:hover,
 .filtr:focus {
   background-color: var(--primary-brand-color);
   color: var(--main-bkg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
+.filtr-list {
+  display: flex;
+  margin-top: 96px;
+  margin-bottom: 72px;
+  justify-content: center;
+}
+.filtr-list .item:not(:last-child) {
+  margin-right: 24px;
+}
+.filtr-list .item {
+}
+
 /* Links */
 .link {
   text-decoration: none;
@@ -212,16 +229,44 @@ body {
 }
 .card {
   background-color: var(--main-bkg-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team .list {
   display: flex;
   justify-content: space-between;
-  
 }
 .caption {
   padding: 0 44px;
   margin: 32px 16px;
   text-align: center;
+}
+/* Portfolio products-list */
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.products-list .item {
+  margin-bottom: 48px;
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.products-list .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.desc {
+  padding-left: 16px;
+  margin: 32px 0;
+}
+.products.section {
+  margin-bottom: 120px;
+}
+.card-hover {
+  width: 360px;
+  height: 300px;
+  background-color: var(--primary-brand-color);
+  color: var(--light-color);
+  padding: 40px 32px;
 }
