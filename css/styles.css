@@ -17,7 +17,53 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/* Main container */
+.container {
+  width: 1152px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+/* Lists */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* Titles and paragraphes */
+.title,
+.text {
+  padding: 0;
+  margin: 0;
+
+}
+/* Sections */
+.section:not(:last-child) {
+  margin-bottom: 120px;
+}
+
+/* Header */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 /* Main navigation */
+/* Position */
+.header .list {
+  display: flex;
+  padding: 24px 0;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.head .list .item + .item {
+  margin-left: 40px;
+}
+/* Colours and fonts */
 .main-nav .link {
   color: var(--dark-color);
   font-weight: 600;
@@ -37,7 +83,11 @@ body {
 .footer .accent {
   color: var(--primary-brand-color);
 }
+
+/* Logo */
 .link.logo {
+  margin-right: 77px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -47,6 +97,8 @@ body {
 }
 /* Hero */
 .hero {
+  padding: 192px 0 192px 0;
+  text-align: center;
   background-color: var(--dark-color);
   color: var(--main-bkg-color);
 }
@@ -54,7 +106,6 @@ body {
   font-weight: 600;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
 }
 /* Features */
 .features h3,
@@ -64,25 +115,46 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
+.features .list {
+  display: flex;
+  }
+.features .item {
+  flex-basis: calc((100% - 24px) / 4);
+  }
+  .features .item:not(:last-child) {
+    margin-right: 24px;
+  }
+
 /* What are we doing */
-.doing > h2 {
+.doing h2 {
   color: var(--dark-color);
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.section .image {
+  display: block;
+}
+.pic .list {
+  display: flex;
+  justify-content: space-between;
 }
 .team {
   background-color: var(--light-color);
 }
 /* Footer */
 .footer {
+  padding: 100px 0;
   background-color: var(--dark-color);
   color: var(--accent-color);
 }
 .footer .link {
+  margin-bottom: 16px;
   color: var(--accent-color);
 }
 /* Buttons */
@@ -93,15 +165,20 @@ body {
   font-weight: 600;
   letter-spacing: 0.04em;
   border: none;
+  border-radius: 4px;
 }
 .order {
+  padding: 16px 32px;
+  margin-top: 48px;
+
   background-color: var(--primary-brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--main-bkg-color);
   line-height: 1.19;
 }
 .order:hover,
 .order:focus {
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
 .filtr {
   background-color: var(--accent-color);
@@ -116,21 +193,34 @@ body {
 /* Links */
 .link {
   text-decoration: none;
-  color: inherit;;
+  color: inherit;
 }
-/* Lists */
-.list {
-  list-style: none;
-}
+
 /* hidden elements */
 .visually-hidden {
   position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.card {
+  background-color: var(--main-bkg-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+}
+.team .list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.caption {
+  padding: 0 44px;
+  margin: 32px 16px;
+  text-align: center;
+}
